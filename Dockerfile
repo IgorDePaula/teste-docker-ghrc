@@ -1,4 +1,4 @@
 FROM bash
-COPY . .
+COPY hello.sh .
 RUN chmod +x hello.sh
-CMD ["./hello.sh"]
+ENTRYPOINT ["bash","hello.sh"]
